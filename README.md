@@ -51,3 +51,11 @@ docker run \
   --workdir="/workspace" \
   devops:1.0.0
 ```
+
+Download and setup the Vim plugins
+
+```bash
+bash /vim_setup.sh
+```
+
+Restart the container and it should work fine.
