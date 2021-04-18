@@ -1,0 +1,23 @@
+{
+    "name": "DevOps",
+    "build": {
+        "dockerfile": "src/DevOps.containerfile",
+        "context": "."
+    },
+    "mounts": [
+        "type=bind,source=${localWorkspaceFolder},destination=/workspace"
+    ],
+    "runArgs": [
+        "--privileged"
+    ],
+    "remoteUser": "developer",
+    "extensions": [
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "ms-python.python",
+        "ms-vscode.powershell-preview",
+        "redhat.vscode-yaml",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-azuretools.vscode-docker"
+    ]
+}
