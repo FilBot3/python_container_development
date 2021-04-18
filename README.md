@@ -58,4 +58,6 @@ Download and setup the Vim plugins
 bash /vim_setup.sh
 ```
 
-Restart the container and it should work fine.
+Restart the container and it should work fine. This container will drop the CLI
+user into a modified `tmux` session. The prefix is `CTRL+a` then everything
+else should work.
